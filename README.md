@@ -44,22 +44,22 @@ The infrastructure relies on pure Point-to-Point (P2P) cryptographic tunnels to 
 ### 1. Active BGP Peer Mesh
 *(This screenshot proves the cryptographic tunnels are active and FRRouting is exchanging prefixes across the HA triangle).*
 <br>
-[INSERT IMAGE HERE: ![BGP Summary](images/bgp_peers.png)]
+[BGP Summary](images/bgp_peers.png)
 
 ### 2. Infrastructure as Code (IaC) Execution
 *(The custom Python controller rebuilding the mesh and restarting the Docker payload).*
 <br>
-`[INSERT IMAGE HERE: ![IaC Deployment](images/iac_deployment.png)]`
+[IaC Deployment](images/iac_deployment.png)
 
 ### 3. Real-Time Self-Healing (The Failover)
 *(Sabotaging the primary BGP link and watching the routing table instantly shift the payload to the backup Node C detour).*
 <br>
-`[INSERT IMAGE HERE: ![Failover Proof](images/failover_proof.png)]`
+[Failover Proof](images/failover_proof.png)
 
 ### 4. Encrypted Payload Delivery
 *(Fetching the Nginx web server payload exclusively over the custom loopback interfaces).*
 <br>
-`[INSERT IMAGE HERE: ![Payload Delivery](images/payload_delivery.png)]`
+[Payload Delivery](images/payload_delivery.png)]
 
 ---
 
